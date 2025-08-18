@@ -22,3 +22,6 @@ install:
 # Run buf to generate code from protobuf definitions.
 buf-generate: install
     buf generate --path internal/
+
+clear-golden:
+    rm -rf internal/converter/testdata/*/output
